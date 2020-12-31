@@ -8,48 +8,37 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:background="#ACD9FC"
-        android:text="toast"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
         android:textColor="#1D2546"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#F8F3CA"
-        android:gravity="center_vertical"
-        android:text="0"
-        android:textAlignment="center"
-        android:textColor="#261E1E"
-        android:textSize="160"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+        android:background="#F9D088"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textColor="#391D1D"
+        android:textSize="156sp"
+        app:layout_constraintStart_toEndOf="@+id/button_count"
+        tools:layout_editor_absoluteY="-4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
