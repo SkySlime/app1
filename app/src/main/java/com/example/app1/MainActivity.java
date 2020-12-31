@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("MainActivity", "Hello World");
+        Log.d("failure", "It's not working");
         mShowCount = (TextView) findViewById(R.id.show_count);
     }
 
@@ -30,5 +31,31 @@ public class MainActivity extends AppCompatActivity {
         ++mCount;
         if (mShowCount != null)
             mShowCount.setText(Integer.toString(mCount));
+    }
+
+    public void disable(View view) {
+        view.setEnabled(false);
+        Log.d("success", "It's working well");
+        Button button = (Button) view;
+        button.setText(R.string.disable);
+    }
+
+    public void disable_another(View view) {
+//        // first way: set variables
+//        View myView = findViewById(R.id.button2);
+//        myView.setEnabled(false);
+//        Button but = (Button) myView;
+//        but.setText(R.string.newly_disabled);
+
+        // second way: no need variables
+        findViewById(R.id.button2).setEnabled(false);
+        ((Button)findViewById(R.id.button2)).setText("Newly disabled");
+    }
+
+    public void enterName(View view) {
+        // When this button is hit, the name from the plaintext box will be received via getText, the show it at textView
+        CharSequence a = ((TextView)findViewById(R.id.editTextTextPersonName)).getText();
+        ((TextView)findViewById(R.id.textView)).setText("Your name is " +a);
+        Toast.makeText(this, "Thanks!", Toast.LENGTH_SHORT).show();
     }
 }
