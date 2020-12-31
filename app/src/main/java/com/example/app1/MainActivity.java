@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchXO(View view) {
-        Intent = new Intent(this, XOActivity.class);
+        Intent i = new Intent(this, XOActivity.class);
+        startActivity(i);
     }
 }
