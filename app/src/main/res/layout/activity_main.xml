@@ -109,4 +109,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
+    <Button
+        android:id="@+id/button_playXO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="launchXO"
+        android:text="Play XO"
+        app:backgroundTint="#EF5656"
+        app:layout_constraintBottom_toBottomOf="@+id/show_count"
+        app:layout_constraintStart_toEndOf="@+id/show_count"
+        app:layout_constraintTop_toTopOf="@+id/show_count" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

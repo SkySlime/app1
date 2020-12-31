@@ -2,6 +2,7 @@ package com.example.app1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -57,5 +58,9 @@ public class MainActivity extends AppCompatActivity {
         CharSequence a = ((TextView)findViewById(R.id.editTextTextPersonName)).getText();
         ((TextView)findViewById(R.id.textView)).setText("Your name is " +a);
         Toast.makeText(this, "Thanks!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void launchXO(View view) {
+        Intent = new Intent(this, XOActivity.class);
     }
 }
