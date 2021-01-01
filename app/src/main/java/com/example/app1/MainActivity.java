@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoSetting(View view) {
-        Intent i_setting = new Intent(this, SettingActivity.class);
+        Intent i_setting = new Intent(this, settingActivity.class);
         startActivity(i_setting);
     }
 }
