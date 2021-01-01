@@ -7,7 +7,7 @@
     tools:context=".XOActivity">
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/b00"
         android:layout_width="93dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/b10"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -28,10 +28,10 @@
         android:onClick="disable"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/b00" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/b20"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -40,10 +40,10 @@
         android:onClick="disable"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/b10" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/b01"
         android:layout_width="93dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -51,33 +51,35 @@
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/b00"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/b11"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/b10"
+        app:layout_constraintTop_toBottomOf="@+id/b01" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/b21"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
+        app:layout_constraintStart_toEndOf="@+id/b20"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/b02"
         android:layout_width="93dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -85,30 +87,29 @@
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/b01"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/b12"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintStart_toEndOf="@+id/b11"
+        app:layout_constraintTop_toTopOf="@+id/b11" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/b22"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:height="80dp"
         android:onClick="disable"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/b21"
+        app:layout_constraintTop_toTopOf="@+id/b21" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
