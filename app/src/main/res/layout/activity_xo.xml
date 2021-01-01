@@ -112,4 +112,18 @@
         app:layout_constraintStart_toEndOf="@+id/b21"
         app:layout_constraintTop_toTopOf="@+id/b21" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="restart"
+        android:text="restart"
+        app:backgroundTint="#FF7272"
+        app:layout_constraintEnd_toEndOf="@+id/b22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
