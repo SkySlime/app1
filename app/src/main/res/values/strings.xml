@@ -9,4 +9,5 @@
     <string name="button3">Button</string>
     <string name="disable">Disabled</string>
     <string name="newly_disabled">newly disabled</string>
+    <string name="testString">I love You!</string>
 </resources>

@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
-        <activity android:name=".settingActivity"></activity>
-        <activity android:name=".winActivity" />
-        <activity android:name=".XOActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".settingActivity" android:label="Settings"></activity>
+        <activity android:name=".winActivity" android:label="WIN"/>
+        <activity android:name=".XOActivity" android:label="XO game"/>
+
+        <activity android:name=".MainActivity" android:label="HOME">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
